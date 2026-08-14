@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spongellé: Investor Early Access, Reg CF Offering</title>
+<meta name="description" content="We're opening a Reg CF offering. Get early access to our pitch deck, investor webinar, and first-look priority before shares go live.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --wine:      #3B0F1A;
+    --wine-deep: #2A0A13;
+    --rose:      #C4595B;
+    --rose-dark: #A83F44;
+    --blush:     #F7E3DC;
+    --cream:     #FBF6EF;
+    --gold:      #B08A3E;
+    --gold-light:#E4C77E;
+    --teal:      #6E9C93;
+    --ink:       #2A1015;
+    --ink-soft:  #6B4A4E;
+    --line:      rgba(59,15,26,0.12);
+    --radius:    18px;
+    --max:       1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    line-height:1.08;
+    margin:0 0 .5em;
+    letter-spacing:-0.01em;
+  }
+  h1{font-size:clamp(2.4rem,5vw,3.7rem);}
+  h2{font-size:clamp(1.9rem,3.4vw,2.7rem);}
+  h3{font-size:1.3rem;}
+  em, .accent-italic{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-weight:500;
+    color:var(--rose);
+  }
+  p{margin:0 0 1em;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--rose);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:14px;
+  }
+  .eyebrow.light{color:var(--gold-light);}
+  .eyebrow::before{
+    content:"";
+    width:7px;height:7px;border-radius:50%;
+    background:currentColor;
+    display:inline-block;
+  }
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 30px;
+    border-radius:100px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:.98rem;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:var(--rose);
+    color:#fff;
+    box-shadow:0 10px 24px rgba(196,89,91,0.35);
+  }
+  .btn-primary:hover{background:var(--rose-dark); transform:translateY(-1px);}
+  .btn-gold{
+    background:linear-gradient(135deg,var(--gold-light),var(--gold));
+    color:var(--wine-deep);
+    box-shadow:0 10px 24px rgba(176,138,62,0.35);
+  }
+  .btn-gold:hover{transform:translateY(-1px);}
+  .btn-ghost{
+    background:transparent;
+    color:var(--cream);
+    border:1.5px solid rgba(251,246,239,0.45);
+  }
+  .btn-ghost:hover{border-color:#fff; background:rgba(255,255,255,0.06);}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,246,239,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--max); margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{
+    font-family:'Fraunces',serif;
+    font-size:1.35rem;
+    letter-spacing:.08em;
+    font-weight:500;
+    color:var(--wine);
+    text-decoration:none;
+  }
+  .logo sup{font-size:.55em;}
+  .nav-tag{
+    font-size:.68rem; font-weight:700; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--rose-dark);
+    border:1px solid var(--rose); border-radius:100px;
+    padding:5px 12px; margin-left:12px; display:inline-block;
+  }
+  .nav-left{display:flex; align-items:center;}
+  .nav-cta{font-size:.9rem; padding:11px 22px;}
+  @media(max-width:640px){ .nav-tag{display:none;} }
+
+  /* ---------- SCALLOP DIVIDERS ---------- */
+  .scallop{ display:block; width:100%; height:34px; margin-bottom:-1px; }
+  .scallop-flip{ transform:rotate(180deg); margin-bottom:0; margin-top:-1px;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:radial-gradient(120% 140% at 78% 20%, #5A1A28 0%, var(--wine) 45%, var(--wine-deep) 100%);
+    color:var(--cream);
+    padding:40px 0 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:32px;
+    align-items:flex-start;
+    max-width:var(--max);
+    margin:0 auto;
+    padding:16px 28px 50px;
+  }
+  .hero-grid > div:first-child{ flex:1 1 460px; }
+  .hero h1{color:#fff;}
+  .hero p.lead{
+    font-size:1.12rem;
+    color:#EBD8D4;
+    max-width:520px;
+  }
+  .hero-img-col{ flex:1 1 420px; display:flex; flex-direction:column; align-items:center; }
+  .hero-img-col .hero-img-wrap{ width:100%; }
+  .hero-img-wrap{
+    position:relative;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 30px 60px rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.12);
+    aspect-ratio:6/5;
+  }
+  .hero-img-wrap img{width:100%; height:100%; object-fit:cover; display:block;}
+  .hero-benefits{ list-style:none; padding:0; margin:22px 0 0; display:grid; gap:10px; }
+  .hero-benefits li{ display:flex; align-items:flex-start; color:#EFDAD6; font-size:.95rem; }
+  .hero-benefits li::before{
+    content:"✓"; color:var(--gold-light); font-weight:700; flex-shrink:0;
+    width:20px;height:20px;border-radius:50%;
+    border:1.4px solid var(--gold-light);
+    display:flex;align-items:center;justify-content:center;
+    font-size:.7rem; margin-top:2px; margin-right:12px;
+  }
+  .hero-side-photo{
+    margin-top:24px; max-width:100%; width:100%;
+    border-radius:16px; overflow:hidden;
+    box-shadow:0 16px 32px rgba(0,0,0,0.3);
+  }
+  .hero-side-photo img{ width:100%; height:auto; display:block; }
+  @media(max-width:900px){ .hero-side-photo{ display:none; } }
+  .hero-form-card{ margin-top:20px; width:100%; padding:26px 26px 22px; }
+  .hero-form-card h3{ font-size:1.2rem; }
+  @media(max-width:900px){
+    .hero-grid{padding-bottom:50px;}
+    .hero-grid > div:first-child, .hero-img-col{flex-basis:100%;}
+    .hero-img-col{order:-1;}
+  }
+
+  .seal{
+    width:38px;height:38px;border-radius:50%;
+    border:1.5px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--gold); font-family:'Fraunces',serif; font-size:1.05rem;
+    margin-bottom:12px;
+  }
+
+  /* ---------- PROOF STRIP ---------- */
+  .proof{ background:var(--cream); padding:36px 0 8px; }
+  .proof-grid{
+    display:flex; flex-wrap:wrap; gap:18px;
+  }
+  .proof-grid .proof-card{ flex:1 1 230px; }
+  .proof-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 20px;
+    text-align:left;
+  }
+  .proof-card .num{font-family:'Fraunces',serif; font-size:1.9rem; color:var(--wine);}
+  .proof-card .lab{font-size:.85rem; color:var(--ink-soft); margin-top:3px; white-space:nowrap;}
+  @media(max-width:480px){ .proof-grid .proof-card{flex-basis:100%;} .proof-card .lab{white-space:normal;} }
+
+  /* ---------- SPLIT SECTIONS ---------- */
+  .split{ padding:36px 0 56px; }
+  .split.blush{ background:var(--blush); }
+  .split-grid{
+    display:flex; flex-wrap:wrap; gap:44px; align-items:center;
+  }
+  .split-grid .copy, .split-grid .art{ flex:1 1 420px; }
+  .split-grid.reverse .copy{order:2;}
+  .split-grid.reverse .art{order:1;}
+  .art img{ border-radius:22px; box-shadow:0 24px 48px rgba(59,15,26,0.16); }
+  .copy p.body{ font-size:1.03rem; color:var(--ink-soft); max-width:520px; }
+  .taglist{ list-style:none; margin:18px 0 0; padding:0; display:grid; gap:10px; }
+  .taglist li{
+    display:flex; align-items:flex-start;
+    font-size:.96rem; color:var(--ink);
+  }
+  .taglist li::before{
+    content:"✓"; color:var(--rose); font-weight:700; flex-shrink:0;
+    width:20px;height:20px;border-radius:50%;
+    border:1.4px solid var(--rose);
+    display:flex;align-items:center;justify-content:center;
+    font-size:.7rem; margin-top:2px; margin-right:12px;
+  }
+  @media(max-width:860px){
+    .split-grid.reverse .copy, .split-grid.reverse .art{order:initial;}
+    .split{padding:44px 0;}
+  }
+
+  /* ---------- MOAT (dark) ---------- */
+  .moat{
+    background:var(--wine-deep);
+    color:var(--cream);
+    padding:32px 0 56px;
+    position:relative;
+  }
+  .moat-head{max-width:640px; margin:0 auto 34px; text-align:center;}
+  .moat-head h2{color:#fff;}
+  .moat-head p{color:#D9B9B6; font-size:1.02rem;}
+  .moat-grid{ display:flex; flex-wrap:wrap; gap:24px; }
+  .moat-grid .moat-card{ flex:1 1 280px; }
+  .moat-card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:20px;
+    overflow:hidden;
+  }
+  .moat-card img{width:100%; height:280px; object-fit:cover; display:block;}
+  .moat-card .cap{ padding:18px 22px 22px; }
+  .moat-card .cap h3{color:var(--gold-light); margin-bottom:6px;}
+  .moat-card .cap p{color:#D9B9B6; font-size:.94rem; margin:0;}
+
+
+  /* ---------- TRACTION GALLERY ---------- */
+  .traction{ background:var(--cream); padding:56px 0; }
+  .traction-head{ max-width:620px; margin-bottom:30px; }
+  .carousel-wrap{ position:relative; display:flex; align-items:center; gap:12px; }
+  .carousel-track{
+    display:flex; gap:20px; overflow-x:auto; scroll-snap-type:x mandatory;
+    scroll-behavior:smooth; padding:4px 4px 12px;
+    -webkit-overflow-scrolling:touch;
+  }
+  .carousel-track::-webkit-scrollbar{ height:6px; }
+  .carousel-track::-webkit-scrollbar-thumb{ background:var(--line); border-radius:10px; }
+  .ccard{
+    flex:0 0 auto; width:270px; scroll-snap-align:start;
+    border-radius:18px; overflow:hidden; background:#fff;
+    box-shadow:0 16px 32px rgba(59,15,26,0.1);
+  }
+  .ccard img{ width:100%; aspect-ratio:1/1; object-fit:cover; display:block; }
+  .ccard-body{ padding:16px 18px 20px; }
+  .ccard-stat{ font-family:'Fraunces',serif; font-size:1.05rem; color:var(--wine); margin-bottom:6px; line-height:1.25; }
+  .ccard-body p{ font-size:.86rem; color:var(--ink-soft); margin:0; }
+  .carousel-arrow{
+    flex-shrink:0; width:44px; height:44px; border-radius:50%;
+    background:#fff; border:1px solid var(--line); color:var(--wine);
+    font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 8px 18px rgba(59,15,26,0.12);
+    transition:background .15s ease, transform .15s ease;
+  }
+  .carousel-arrow:hover{ background:var(--blush); transform:translateY(-1px); }
+  @media(max-width:640px){
+    .carousel-arrow{ display:none; }
+    .ccard{ width:78vw; }
+  }
+
+
+  /* ---------- FOUNDER ---------- */
+  .founder{ background:var(--blush); padding:56px 0; }
+  .founder-grid{ display:flex; flex-wrap:wrap; gap:40px; align-items:center; }
+  .founder-grid .art{ flex:1 1 380px; }
+  .founder-grid .copy{ flex:1.3 1 420px; }
+  .founder-grid img{ border-radius:22px; box-shadow:0 24px 48px rgba(59,15,26,0.18); }
+  .founder-name{ font-weight:600; margin-top:14px; color:var(--wine); }
+  .founder-quote{
+    font-family:'Fraunces',serif; font-style:italic; font-size:.95rem;
+    color:var(--ink-soft); margin-top:14px; line-height:1.5;
+  }
+  .founder-role{ font-size:.88rem; color:var(--ink-soft); }
+
+
+  /* ---------- FORM SECTION ---------- */
+  .capture{
+    background:radial-gradient(120% 140% at 20% 10%, #5A1A28 0%, var(--wine) 45%, var(--wine-deep) 100%);
+    color:var(--cream);
+    padding:60px 0 56px;
+  }
+  .capture-grid{ display:flex; flex-wrap:wrap; gap:44px; align-items:flex-start; }
+  .capture-grid > div{ flex:1 1 420px; }
+  .capture-grid > .form-card{ flex:1.1 1 420px; }
+  .capture h2{color:#fff;}
+  .capture p.lead{ color:#EBD8D4; font-size:1.03rem; max-width:480px; }
+  .capture-points{ list-style:none; padding:0; margin:20px 0 0; display:grid; gap:12px; }
+  .capture-points li{ display:flex; align-items:flex-start; color:#EFDAD6; font-size:.95rem; }
+  .capture-points li::before{
+    content:"";
+    width:8px;height:8px;border-radius:50%;
+    background:var(--gold-light); margin-top:7px; margin-right:12px; flex-shrink:0;
+  }
+  .capture-photo{
+    margin-top:28px; max-width:320px;
+    border-radius:20px; overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+  }
+  .capture-photo img{ width:100%; height:auto; display:block; }
+
+  .form-card{
+    background:var(--cream);
+    color:var(--ink);
+    border-radius:22px;
+    padding:30px 30px 26px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.35);
+  }
+  .form-card h3{ font-size:1.3rem; color:var(--wine); margin-bottom:4px; }
+  .form-card .sub{ font-size:.9rem; color:var(--ink-soft); margin-bottom:16px; }
+  .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  label{
+    display:block; font-size:.78rem; font-weight:600; letter-spacing:.02em;
+    color:var(--ink); margin-bottom:6px; margin-top:11px;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], select{
+    width:100%; padding:13px 14px; border-radius:10px;
+    border:1.4px solid #E3D2CC; background:#fff;
+    font-family:'Inter',sans-serif; font-size:.95rem; color:var(--ink);
+    outline:none; transition:border-color .15s;
+  }
+  input:focus, select:focus{ border-color:var(--rose); }
+  .checkbox-row{
+    display:flex; gap:10px; align-items:flex-start; margin-top:18px;
+  }
+  .checkbox-row input{ margin-top:3px; accent-color:var(--rose); width:16px; height:16px; flex-shrink:0;}
+  .checkbox-row label{ margin:0; font-size:.82rem; font-weight:400; color:var(--ink-soft); line-height:1.5; }
+  .form-submit{ width:100%; justify-content:center; margin-top:22px; font-size:1rem; padding:16px; }
+  .form-legal{ font-size:.72rem; color:var(--ink-soft); margin-top:16px; line-height:1.5; }
+  .form-contact{
+    text-align:center; font-size:.85rem; color:var(--ink-soft); margin:18px 0 0;
+  }
+  .form-contact a{ color:var(--rose-dark); text-decoration:underline; }
+  .form-success{
+    display:none; text-align:center; padding:30px 10px;
+  }
+  .form-success .seal{ margin:0 auto 16px; width:56px; height:56px; font-size:1.5rem; }
+  .form-success h3{ color:var(--wine); }
+  @media(max-width:960px){
+    .field-row{grid-template-columns:1fr;}
+  }
+
+  /* ---------- PERKS ---------- */
+  .perks{ background:var(--blush); padding:56px 0; }
+  .perks-head{ max-width:620px; margin-bottom:32px; }
+  .perks-head h2{ font-size:clamp(1.6rem, 2.6vw, 2.1rem); }
+
+  /* ---------- INVESTMENT CALCULATOR ---------- */
+  .perks-row{ display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; }
+  .calc-card{
+    background:#fff; border-radius:20px; padding:32px 32px 28px;
+    box-shadow:0 16px 36px rgba(59,15,26,0.1);
+    flex:1 1 420px; max-width:640px;
+  }
+  .calc-top{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px; }
+  .calc-label{ font-size:.85rem; color:var(--ink-soft); font-weight:600; }
+  .calc-amount{
+    font-family:'Fraunces',serif; font-size:2.1rem; color:var(--wine);
+    transition:color .15s ease;
+  }
+  .calc-slider{
+    -webkit-appearance:none; appearance:none; width:100%; height:8px;
+    border-radius:100px; background:var(--line); outline:none; cursor:pointer;
+    accent-color:var(--rose);
+  }
+  .calc-slider::-webkit-slider-thumb{
+    -webkit-appearance:none; appearance:none;
+    width:24px; height:24px; border-radius:50%;
+    background:var(--rose); border:3px solid #fff;
+    box-shadow:0 4px 12px rgba(196,89,91,0.45);
+    cursor:pointer; transition:transform .15s ease;
+  }
+  .calc-slider::-webkit-slider-thumb:hover{ transform:scale(1.15); }
+  .calc-slider::-moz-range-thumb{
+    width:24px; height:24px; border-radius:50%;
+    background:var(--rose); border:3px solid #fff;
+    box-shadow:0 4px 12px rgba(196,89,91,0.45);
+    cursor:pointer;
+  }
+  .calc-scale{
+    display:flex; justify-content:space-between;
+    font-size:.76rem; color:var(--ink-soft); margin:8px 0 22px;
+  }
+  .calc-result{
+    display:flex; align-items:center; gap:16px;
+    background:var(--blush); border-radius:14px; padding:18px 20px;
+    transition:background .2s ease;
+  }
+  .calc-result-icon{ font-size:1.6rem; flex-shrink:0; }
+  .calc-result-title{
+    font-family:'Fraunces',serif; font-size:1.15rem; color:var(--wine);
+    transition:opacity .15s ease;
+  }
+  .calc-result-sub{ font-size:.85rem; color:var(--ink-soft); margin-top:2px; }
+  .calc-result.tier-top{ background:var(--wine); }
+  .calc-result.tier-top .calc-result-title{ color:var(--gold-light); }
+  .calc-result.tier-top .calc-result-sub{ color:#D9B9B6; }
+
+  .perks-photo{
+    flex:1 1 380px; display:flex; flex-direction:column;
+  }
+  .perks-photo-frame{
+    background:linear-gradient(135deg, var(--gold-light), var(--gold));
+    padding:4px; border-radius:16px;
+    box-shadow:0 16px 36px rgba(176,138,62,0.25);
+  }
+  .perks-photo img{
+    width:100%; height:260px; object-fit:cover; display:block;
+    border-radius:13px;
+  }
+  .perks-photo p{
+    font-family:'Fraunces',serif; font-style:italic; font-size:.92rem;
+    color:var(--ink-soft); margin:16px 0 0; padding:0; line-height:1.6;
+    max-width:520px;
+  }
+
+  /* ---------- CLOSING CTA ---------- */
+  .closing-cta{
+    background:radial-gradient(120% 140% at 50% 0%, #5A1A28 0%, var(--wine) 45%, var(--wine-deep) 100%);
+    color:#fff; text-align:center; padding:56px 0 40px;
+  }
+  .closing-cta h2{ color:#fff; max-width:600px; margin:0 auto .4em; }
+  .closing-cta > .wrap > p{ color:#D9B9B6; margin-bottom:26px; }
+  .closing-cta .form-contact{ color:#D9B9B6; margin-top:18px; }
+  .closing-cta .form-contact a{ color:var(--gold-light); }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--wine-deep);
+    color:#C9A6A2;
+    padding:44px 0 30px;
+    font-size:.82rem;
+  }
+  .footer-top{
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:16px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    padding-bottom:26px; margin-bottom:22px;
+  }
+  .footer-logo{ font-family:'Fraunces',serif; color:#fff; font-size:1.2rem; letter-spacing:.06em; }
+  footer p{ margin:0 0 12px; line-height:1.6; }
+  footer .legal{ max-width:900px; }
+  .footer-bottom{ color:#8C6A67; font-size:.76rem; }
+
+  /* ---------- VIDEOS ---------- */
+  .videos{ background:var(--blush); padding:56px 0; }
+  .videos-head{ max-width:620px; margin-bottom:30px; }
+  .vgrid{ display:flex; flex-wrap:wrap; gap:22px; }
+  .vgrid > div{ flex:1 1 300px; max-width:400px; margin:0 auto; }
+  .video-embed-wrap{
+    border-radius:20px; overflow:hidden;
+    box-shadow:0 20px 40px rgba(59,15,26,0.14);
+    background:#fff;
+    min-height:400px;
+  }
+  .video-embed-wrap iframe{ display:block; }
+
+  /* ---------- FAQ ---------- */
+  .faq{ background:var(--cream); padding:56px 0; }
+  .faq-head{ max-width:620px; margin-bottom:30px; }
+  .faq-list{ max-width:760px; }
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-item:first-child{ border-top:1px solid var(--line); }
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none; cursor:pointer;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:20px 4px; font-family:'Fraunces',serif; font-size:1.08rem; color:var(--ink);
+  }
+  .faq-q .plus{
+    flex-shrink:0; width:26px; height:26px; border-radius:50%;
+    border:1.4px solid var(--rose); color:var(--rose);
+    display:flex; align-items:center; justify-content:center;
+    font-size:1rem; font-family:'Inter',sans-serif; transition:transform .25s ease;
+  }
+  .faq-item.open .faq-q .plus{ transform:rotate(45deg); }
+  .faq-a{
+    max-height:0; overflow:hidden; transition:max-height .3s ease;
+  }
+  .faq-a p{ padding:0 4px 20px; color:var(--ink-soft); font-size:.97rem; max-width:680px; }
+
+  /* ---------- MID-PAGE CTA ---------- */
+  .section-cta{ text-align:center; margin-top:36px; }
+  .section-cta .btn{ padding:16px 34px; font-size:1rem; }
+  .section-cta p{ font-size:.85rem; color:var(--ink-soft); margin:12px 0 0; }
+  .section-cta.on-dark p{ color:#D9B9B6; }
+
+  /* ---------- GROUND FLOOR ---------- */
+  .ground-floor{ background:var(--wine); color:var(--cream); padding:56px 0; }
+  .gf-head{ max-width:680px; margin:0 auto 36px; text-align:center; }
+  .gf-head h2{ color:#fff; }
+  .gf-intro{ color:#EBD8D4; font-size:1.03rem; line-height:1.6; margin-top:10px; }
+  .gf-timeline{ display:flex; flex-wrap:wrap; gap:20px; max-width:900px; margin:0 auto; }
+  .gf-step{
+    flex:1 1 240px; background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.14); border-radius:16px;
+    padding:24px 22px; text-align:center;
+  }
+  .gf-step.featured{ background:rgba(228,199,126,0.1); border-color:var(--gold-light); }
+  .gf-num{
+    width:34px; height:34px; border-radius:50%; margin:0 auto 12px;
+    background:var(--gold-light); color:var(--wine-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces',serif; font-weight:600;
+  }
+  .gf-step h3{ font-size:1.05rem; color:#fff; margin-bottom:8px; }
+  .gf-step p{ color:#D9B9B6; font-size:.9rem; margin:0; line-height:1.5; }
+  .gf-closer{
+    text-align:center; font-family:'Fraunces',serif; font-style:italic;
+    font-size:1.2rem; color:var(--gold-light); margin:32px 0 0;
+  }
+
+  /* ---------- MOMENTUM ---------- */
+  .momentum{ background:var(--cream); padding:56px 0; }
+  .momentum-head{ max-width:680px; margin-bottom:36px; }
+  .momentum-grid{ display:flex; flex-wrap:wrap; gap:20px; }
+  .momentum-card{
+    flex:1 1 300px; background:#fff; border:1px solid var(--line);
+    border-radius:var(--radius); padding:26px 24px;
+  }
+  .m-num{ font-family:'Fraunces',serif; font-size:2rem; color:var(--rose-dark); margin-bottom:6px; }
+  .m-title{ font-weight:700; font-size:1rem; color:var(--ink); margin-bottom:8px; }
+  .momentum-card p{ font-size:.9rem; color:var(--ink-soft); margin:0; }
+  .m-more-btn{
+    background:none; border:none; cursor:pointer; padding:0;
+    display:flex; align-items:center; gap:6px;
+    font-family:'Inter',sans-serif; font-size:.82rem; font-weight:600;
+    color:var(--rose-dark); margin-top:14px;
+  }
+  .m-more-btn .plus{
+    width:16px; height:16px; border-radius:50%; border:1.3px solid var(--rose-dark);
+    display:flex; align-items:center; justify-content:center;
+    font-size:.68rem; transition:transform .2s ease;
+  }
+  .m-more-btn.open .plus{ transform:rotate(45deg); }
+  .m-more{
+    max-height:0; overflow:hidden; transition:max-height .3s ease;
+  }
+  .m-more p{ padding-top:10px; font-size:.87rem; font-style:italic; color:var(--rose-dark); }
+
+  /* ---------- MARKET GROWTH ---------- */
+  .market{ background:var(--wine-deep); color:var(--cream); padding:56px 0 32px; }
+  .market-head{ max-width:640px; margin:0 auto 40px; text-align:center; }
+  .market-head h2{ color:#fff; }
+  .market-head p{ color:#D9B9B6; font-size:1.02rem; }
+  .market-toggle{
+    display:flex; justify-content:center; gap:10px; margin-bottom:36px;
+  }
+  .toggle-btn{
+    background:transparent; border:1.4px solid rgba(255,255,255,0.25);
+    color:#D9B9B6; font-family:'Inter',sans-serif; font-size:.85rem; font-weight:600;
+    padding:9px 20px; border-radius:100px; cursor:pointer;
+    transition:background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .toggle-btn:hover{ border-color:var(--gold-light); color:#fff; }
+  .toggle-btn.active{ background:var(--gold-light); border-color:var(--gold-light); color:var(--wine-deep); }
+  .market-chart-wrap{ max-width:560px; margin:0 auto; }
+  .market-bars-row{
+    display:flex; align-items:flex-end; justify-content:center; gap:36px;
+    height:180px; border-bottom:2px solid rgba(228,199,126,0.35);
+  }
+  .bar-col{
+    flex:1 1 0; height:100%; display:flex; align-items:flex-end;
+    justify-content:center; position:relative; cursor:pointer;
+  }
+  .bar-fill{
+    width:100%; max-width:90px; min-height:14px; border-radius:6px 6px 0 0;
+    background:linear-gradient(180deg,var(--gold-light),var(--gold));
+    box-shadow:0 8px 20px rgba(176,138,62,0.3);
+    transition:height .5s cubic-bezier(.4,0,.2,1), box-shadow .2s ease;
+  }
+  .bar-col:hover .bar-fill{ box-shadow:0 8px 26px rgba(228,199,126,0.55); }
+  .bar-tooltip{
+    position:absolute; bottom:100%; left:50%; transform:translateX(-50%) translateY(6px);
+    background:#fff; color:var(--wine); font-size:.78rem; font-weight:600;
+    padding:6px 12px; border-radius:8px; white-space:nowrap;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    opacity:0; pointer-events:none; transition:opacity .15s ease, transform .15s ease;
+    margin-bottom:8px;
+  }
+  .bar-col:hover .bar-tooltip{ opacity:1; transform:translateX(-50%) translateY(0); }
+  .market-labels-row{ display:flex; justify-content:center; gap:36px; margin-top:14px; }
+  .label-col{ flex:1 1 0; text-align:center; }
+  .bar-value{
+    font-family:'Fraunces',serif; font-size:1.3rem; color:var(--gold-light);
+    transition:opacity .2s ease;
+  }
+  .bar-label{ font-size:.82rem; color:#D9B9B6; margin-top:4px; text-align:center; }
+  .bar-label span{ display:block; font-size:.72rem; color:var(--gold-light); margin-top:2px; }
+  .market-hint{ text-align:center; font-size:.78rem; color:#B9968F; margin:18px 0 4px; }
+  .market-source{ text-align:center; font-size:.76rem; color:#B9968F; max-width:520px; margin:6px auto 0; }
+  .market-callout{
+    max-width:640px; margin:28px auto 0; text-align:center;
+    border-top:1px solid rgba(255,255,255,0.15); padding-top:24px;
+  }
+  .market-callout p{ font-family:'Fraunces',serif; font-style:italic; font-size:1.15rem; color:#fff; margin:0; }
+
+  /* ---------- SCROLL REVEAL ---------- */
+  .reveal{
+    opacity:0; transform:translateY(14px);
+    transition:opacity .45s ease, transform .45s ease;
+  }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+  @media(prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+  }
+</style>
+<noscript><style>.reveal{opacity:1!important; transform:none!important;}</style></noscript>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="#top" class="logo">SPONGELLÉ<sup>®</sup></a>
+      <span class="nav-tag">Investor Preview</span>
+    </div>
+    <a href="#hero-form" class="btn btn-primary nav-cta">Get Early Access</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow light">Investor Access &middot; Limited Availability</span>
+      <h1>This beauty brand is already winning. Get in before everyone else does.</h1>
+      <p class="lead">10 million units sold. 30,000 retail doors. 100+ patents protecting the format. We've already done the hard part, building something people buy on repeat. The opportunity to own a piece of it is what's left, and it won't stay open forever.</p>
+      <ul class="hero-benefits">
+        <li>Priority access before this opens to the broader public</li>
+        <li>See the full pitch deck and financials first</li>
+        <li>A personal invite to our investor webinar</li>
+      </ul>
+      <div class="hero-side-photo reveal">
+        <img src="images/lemon_wide.jpg" alt="Spongélato by Spongellé, Limone flavor buffer surrounded by fresh lemons">
+      </div>
+    </div>
+    <div class="hero-img-col">
+      <div class="hero-img-wrap">
+        <img src="images/hero_sponge_crop.jpg" alt="Spongellé Body Wash Infused Buffer, a patented sponge that lathers with water">
+      </div>
+      <div class="form-card hero-form-card" id="hero-form">
+        <div id="form-view-top">
+          <h3>Get Early Access</h3>
+          <p class="sub">Takes 30 seconds. No payment required today.</p>
+          <form id="leadFormTop">
+            <label for="fname-top">First name</label>
+            <input type="text" id="fname-top" name="fname" required>
+
+            <label for="email-top">Email address</label>
+            <input type="email" id="email-top" name="email" required>
+
+            <label for="phone-top">Phone</label>
+            <input type="tel" id="phone-top" name="phone" placeholder="(555) 555-5555" required>
+
+            <button type="submit" class="btn btn-primary form-submit">Get Early Access →</button>
+            <p class="form-legal">Not an offer to sell securities. See full disclaimer below.</p>
+          </form>
+        </div>
+        <div id="success-view-top" class="form-success">
+          <div class="seal">✓</div>
+          <h3>You're on the list.</h3>
+          <p style="color:var(--ink-soft);">We'll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="scallop" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:-2px;">
+  <path d="M0,0 
+    C 25,40 75,40 100,0 
+    C 125,40 175,40 200,0 
+    C 225,40 275,40 300,0 
+    C 325,40 375,40 400,0 
+    C 425,40 475,40 500,0 
+    C 525,40 575,40 600,0 
+    C 625,40 675,40 700,0 
+    C 725,40 775,40 800,0 
+    C 825,40 875,40 900,0 
+    C 925,40 975,40 1000,0 
+    C 1025,40 1075,40 1100,0 
+    C 1125,40 1175,40 1200,0 
+    L1200,0 L0,0 Z" fill="#FBF6EF"/>
+</svg>
+
+<section class="proof">
+  <div class="wrap">
+    <div class="proof-grid">
+      <div class="proof-card reveal">
+        <div class="seal">10M</div>
+        <div class="num">10M+</div>
+        <div class="lab">Units sold worldwide</div>
+      </div>
+      <div class="proof-card reveal">
+        <div class="seal">★</div>
+        <div class="num">30,000+</div>
+        <div class="lab">Five-star reviews</div>
+      </div>
+      <div class="proof-card reveal">
+        <div class="seal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 21H21M4 21V8L12 3L20 8V21M9 21V14H15V21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="num">30,000+</div>
+        <div class="lab">Retail doors nationwide</div>
+      </div>
+      <div class="proof-card reveal">
+        <div class="seal">$</div>
+        <div class="num" style="font-size:1.6rem;">$20M+</div>
+        <div class="lab">Revenue, profitable in 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="opportunity">
+  <div class="wrap">
+    <div class="split-grid">
+      <div class="copy reveal">
+        <span class="eyebrow">Why This Matters To You</span>
+        <h2>You're not funding an idea. You're buying into something that already works.</h2>
+        <p class="body">For decades, a basic shower meant buying, storing, and replacing four separate products. We patented a single sponge that replaces all of them, and it's already carved out real share in a $100B+ global market. Every one of the 10 million units already sold is proof this isn't a bet on potential. It's a business that works today, and the door to own a piece of it is still open.</p>
+        <ul class="taglist">
+          <li>A market already validated at scale, not a hypothesis</li>
+          <li>A category-creating format competitors can't simply copy</li>
+          <li>Room to grow across a $100B+ category still up for grabs</li>
+        </ul>
+      </div>
+      <div class="art reveal">
+        <img src="images/category_market.jpg" alt="Comparison of a traditional multi-product shower routine next to a single Spongellé patented buffer">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="market">
+  <div class="wrap">
+    <div class="market-head reveal">
+      <span class="eyebrow light">The Market</span>
+      <h2>You're getting in while this market is still accelerating.</h2>
+      <p>The luxury bath and body category isn't a niche. It's a market already worth billions, growing fast, and still early in its curve.</p>
+    </div>
+    <div class="market-toggle reveal" role="tablist">
+      <button type="button" class="toggle-btn active" data-view="size">Market Size</button>
+      <button type="button" class="toggle-btn" data-view="growth">Growth Since 2022</button>
+    </div>
+    <div class="market-chart-wrap reveal">
+      <div class="market-bars-row" id="marketChart">
+        <div class="bar-col" data-size-h="38" data-growth-h="10" data-size-val="$15.06B" data-growth-val="Baseline year">
+          <div class="bar-tooltip"></div>
+          <div class="bar-fill" style="height:38%;"></div>
+        </div>
+        <div class="bar-col" data-size-h="52" data-growth-h="22" data-size-val="$16.92B" data-growth-val="+12.3% vs 2022">
+          <div class="bar-tooltip"></div>
+          <div class="bar-fill" style="height:52%;"></div>
+        </div>
+        <div class="bar-col" data-size-h="100" data-growth-h="100" data-size-val="$24.27B" data-growth-val="+61.2% vs 2022">
+          <div class="bar-tooltip"></div>
+          <div class="bar-fill" style="height:100%;"></div>
+        </div>
+      </div>
+      <div class="market-labels-row">
+        <div class="label-col">
+          <div class="bar-value">$15.06B</div>
+          <div class="bar-label">2022</div>
+        </div>
+        <div class="label-col">
+          <div class="bar-value">$16.92B</div>
+          <div class="bar-label">2023 <span>+12.3% CAGR</span></div>
+        </div>
+        <div class="label-col">
+          <div class="bar-value">$24.27B</div>
+          <div class="bar-label">2027 (proj.) <span>+9.4% CAGR</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="market-hint reveal">Hover or tap a bar for the exact figure.</p>
+    <p class="market-source reveal">Rising demand for self-care and luxury bath and body products, driven by consumer interest in premium daily rituals. Source: industry market research, Feb 2023.</p>
+    <div class="market-callout reveal">
+      <p>We built a patented, category-defining format inside this exact growth curve, already selling at scale, already profitable, before most of this market growth has even happened yet.</p>
+    </div>
+  </div>
+</section>
+
+<section class="moat">
+  <div class="wrap">
+    <div class="moat-head reveal">
+      <span class="eyebrow light">The Moat</span>
+      <h2>Here's why a competitor can't just copy this next month.</h2>
+      <p>This is exactly the kind of protection investors look for: a business that can't be undercut overnight. Beyond the original buffer, we've built a full self-care platform, hand and body wash, lotions, candles, and gift sets across a dozen signature scents. That's more ways for a single investment to grow, not just one product doing all the work.</p>
+    </div>
+    <div class="moat-grid">
+      <div class="moat-card reveal">
+        <img src="images/infusion_white_marble.jpg" alt="A Spongellé buffer lathering in hand under running water, demonstrating the proprietary infusion technology">
+        <div class="cap">
+          <h3>Proprietary Infusion Technology</h3>
+          <p>100+ worldwide patents protect the process that infuses cleanser, exfoliant, and fragrance into the sponge itself.</p>
+        </div>
+      </div>
+      <div class="moat-card reveal">
+        <img src="images/infusion_pink_white.jpg" alt="A Spongellé buffer lathering in hand, demonstrating the patented infusion format">
+        <div class="cap">
+          <h3>66% Gross Margins</h3>
+          <p>A high-margin, repeat-purchase product with a manufacturing process built to scale is rare in consumer beauty.</p>
+        </div>
+      </div>
+      <div class="moat-card reveal">
+        <img src="images/pedestal_wine.jpg" alt="A Spongellé buffer displayed on a marble and brass pedestal">
+        <div class="cap">
+          <h3>Category-Creating Innovation</h3>
+          <p>We didn't enter an existing category. We invented the Body Wash Infused Buffer® and patented the format.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="momentum">
+  <div class="wrap">
+    <div class="momentum-head reveal">
+      <span class="eyebrow">Multiple Engines Of Growth</span>
+      <h2>This isn't a one-product bet. It's a business firing on every channel at once.</h2>
+      <p style="color:var(--ink-soft); font-size:1.02rem;">Product diversification is what makes a consumer brand a safer, more dynamic investment. Here's what's compounding right now, straight from our most recent investor update.</p>
+    </div>
+    <div class="momentum-grid">
+      <div class="momentum-card reveal">
+        <div class="m-num">80%</div>
+        <div class="m-title">Amazon Growth, Year Over Year</div>
+        <p>150+ products live on the channel. Our top sellers carry 5,000+ reviews at a 4.7-star average, and Amazon is one of the hardest channels in retail to grow on right now.</p>
+        <button class="m-more-btn" type="button">More detail <span class="plus">+</span></button>
+        <div class="m-more"><p>We think there's still a massive ceiling here, our team's internal target is at least $10M a year on Amazon alone.</p></div>
+      </div>
+      <div class="momentum-card reveal">
+        <div class="m-num">~1,000%</div>
+        <div class="m-title">Subscription Revenue Growth</div>
+        <p>Direct-to-consumer subscribers are worth 3 to 4 times more in lifetime value than one-time buyers, and this line is compounding fast.</p>
+        <button class="m-more-btn" type="button">More detail <span class="plus">+</span></button>
+        <div class="m-more"><p>Cancellation rates on these subscriptions have stayed low, some customers have reordered over 100 times through our site.</p></div>
+      </div>
+      <div class="momentum-card reveal">
+        <div class="m-num">6+</div>
+        <div class="m-title">Major Licensing Partnerships</div>
+        <p>Harry Potter and DC are already live. Bluey and Crayola launch this month. Sanrio and Liquid Death are confirmed for next year, each one opening the door to an entirely new customer base.</p>
+        <button class="m-more-btn" type="button">More detail <span class="plus">+</span></button>
+        <div class="m-more"><p>Bluey and Crayola will also get their own shelf space inside those brands' Amazon stores, on top of retail conversations underway with Walmart, Target, CVS, Walgreens, Costco, and Sam's Club.</p></div>
+      </div>
+      <div class="momentum-card reveal">
+        <div class="m-num">2</div>
+        <div class="m-title">Brand-New Categories Launching</div>
+        <p>We're entering pet care and kitchen and household cleaning in 2027, under our own trademarked Spongify line, taking a proven format into markets we've never touched.</p>
+        <button class="m-more-btn" type="button">More detail <span class="plus">+</span></button>
+        <div class="m-more"><p>This will be our first time bringing a pet product fully to market. Customers have been asking us for one for years.</p></div>
+      </div>
+      <div class="momentum-card reveal">
+        <div class="m-num">3</div>
+        <div class="m-title">Major New Retail Doors Opening</div>
+        <p>Whole Foods, Sprouts, and Macy's Marketplace are all launching in the coming months, on top of the 30,000 doors we're already in.</p>
+        <button class="m-more-btn" type="button">More detail <span class="plus">+</span></button>
+        <div class="m-more"><p>Our Sprouts launch from last year is already expanding, they keep adding new products to shelves since we came on.</p></div>
+      </div>
+      <div class="momentum-card reveal">
+        <div class="m-num">$40-50M</div>
+        <div class="m-title">Revenue Target, Next Few Years</div>
+        <p>Up from $20M+ today. Private label talks are underway with major names in the space, and our growth plan is already funded by real, existing demand.</p>
+        <button class="m-more-btn" type="button">More detail <span class="plus">+</span></button>
+        <div class="m-more"><p>We were profitable for the three months leading into this raise, and we expect that trend to continue.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="traction">
+  <div class="wrap">
+    <div class="traction-head reveal">
+      <span class="eyebrow">Proven, Not Theoretical</span>
+      <h2>Every number below already happened.</h2>
+      <p style="color:var(--ink-soft); font-size:1.02rem;">You're not being asked to fund a hope. This is a business that works today, before you've invested a single dollar, in a category you already spend&nbsp;money&nbsp;in.</p>
+    </div>
+    <div class="carousel-wrap reveal">
+      <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous">&larr;</button>
+      <div class="carousel-track" id="proof-carousel">
+        <div class="ccard">
+          <img src="images/carousel_units_sold.jpg" alt="Spongellé Body Wash Infused Buffer product shot">
+          <div class="ccard-body">
+            <div class="ccard-stat">10 Million Units Sold</div>
+            <p>Don't invest in a concept. Back a category creator that already won the market.</p>
+          </div>
+        </div>
+        <div class="ccard">
+          <img src="images/carousel_retail_shelves.jpg" alt="Spongellé product displayed on a retail store shelf">
+          <div class="ccard-body">
+            <div class="ccard-stat">Dominating 30,000 Retail Shelves</div>
+            <p>Already earning space from The Ritz-Carlton to everyday mass retail.</p>
+          </div>
+        </div>
+        <div class="ccard">
+          <img src="images/carousel_five_star.jpg" alt="Spongellé product on a marble bathroom counter">
+          <div class="ccard-body">
+            <div class="ccard-stat">30,000 Five-Star Reviews</div>
+            <p>When you upgrade a daily routine, you engineer recurring revenue.</p>
+          </div>
+        </div>
+        <div class="ccard">
+          <img src="images/carousel_amazon.jpg" alt="Spongellé product lineup packaged for shipping">
+          <div class="ccard-body">
+            <div class="ccard-stat">$2.15M on Amazon in 12 Months</div>
+            <p>Triple-digit digital growth meets unstoppable global retail demand.</p>
+          </div>
+        </div>
+        <div class="ccard">
+          <img src="images/carousel_shower.jpg" alt="Woman in shower with Spongellé buffer lathering in hand">
+          <div class="ccard-body">
+            <div class="ccard-stat">We Didn't Launch a Soap</div>
+            <p>We patented a delivery system that replaced the entire shower routine.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-arrow carousel-next" type="button" aria-label="Next">&rarr;</button>
+    </div>
+  </div>
+</section>
+
+<section class="videos">
+  <div class="wrap">
+    <div class="videos-head reveal">
+      <span class="eyebrow">See It In Action</span>
+      <h2>The product, straight from the source.</h2>
+      <p style="color:var(--ink-soft); font-size:1.02rem;">A closer look at the format, the lather, and the customers who keep coming&nbsp;back.</p>
+    </div>
+    <div class="vgrid" id="ig-video-grid">
+      <div class="reveal">
+        <div class="video-embed-wrap">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Danl5bOFavK/" data-instgrm-version="14" style="margin:0; width:100%;"></blockquote>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="video-embed-wrap">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DbqfWtsKc_g/" data-instgrm-version="14" style="margin:0; width:100%;"></blockquote>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="video-embed-wrap">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DZ5PTHOK85E/" data-instgrm-version="14" style="margin:0; width:100%;"></blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founder">
+  <div class="wrap">
+    <div class="founder-grid">
+      <div class="art reveal">
+        <img src="images/founder_crop.jpg" alt="Elaine Binder, Co-Founder of Spongellé, holding a pink Spongellé Body Wash Infused Buffer">
+        <p class="founder-quote">"We didn't just build a product. We built a patented category creator with 66% gross margins. Now, we're expanding into new categories entirely."</p>
+      </div>
+      <div class="copy reveal">
+        <span class="eyebrow">From the Co-Founder</span>
+        <h2>A family problem sparked a global innovation.</h2>
+        <p class="body">Spongellé began as a search for a better way to shower, and became a patented, category-defining platform sold in over 20 countries. Now we're opening the next phase of growth, and inviting people like you to own a piece of what we built before it goes to the broader public.</p>
+        <div class="founder-name">Elaine Binder</div>
+        <div class="founder-role">Co-Founder, Spongellé</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ground-floor">
+  <div class="wrap">
+    <div class="gf-head reveal">
+      <span class="eyebrow light">Why Timing Matters</span>
+      <h2>Let's be real with you for a second about timing.</h2>
+      <p class="gf-intro">Companies are usually cheapest to get into right before everyone finds out about them, and most expensive right after. Here's where Spongellé sits on that curve right now.</p>
+    </div>
+    <div class="gf-timeline reveal">
+      <div class="gf-step">
+        <div class="gf-num">1</div>
+        <h3>Right Now</h3>
+        <p>Profitable, in 30,000 doors, growing 80% on Amazon, still mostly unknown outside people who already shop us.</p>
+      </div>
+      <div class="gf-step">
+        <div class="gf-num">2</div>
+        <h3>Coming Months</h3>
+        <p>Bluey, Crayola, Whole Foods, and Sprouts all go live. A lot more people are about to discover this brand.</p>
+      </div>
+      <div class="gf-step featured">
+        <div class="gf-num">3</div>
+        <h3>Later</h3>
+        <p>Once the brand is a household name, this kind of entry point usually isn't sitting around waiting anymore.</p>
+      </div>
+    </div>
+    <p class="gf-closer reveal">You're looking at step one. That's the whole pitch.</p>
+  </div>
+</section>
+
+<section class="perks">
+  <div class="wrap">
+    <div class="perks-head reveal">
+      <span class="eyebrow">A Little Something Extra</span>
+      <h2>Invest more, get more product back, on top of your equity&nbsp;stake.</h2>
+      <p style="color:var(--ink-soft); font-size:.98rem;">Drag the slider to see what your investment could unlock.</p>
+    </div>
+
+    <div class="perks-row">
+      <div class="calc-card reveal">
+        <div class="calc-top">
+          <span class="calc-label">Your investment</span>
+          <span class="calc-amount" id="calcAmount">$500</span>
+        </div>
+        <input type="range" id="calcSlider" class="calc-slider" min="500" max="2500" step="50" value="500" aria-label="Investment amount">
+        <div class="calc-scale">
+          <span>$500</span>
+          <span>$1,000</span>
+          <span>$1,500</span>
+          <span>$2,000</span>
+          <span>$2,500+</span>
+        </div>
+        <div class="calc-result" id="calcResult">
+          <div class="calc-result-icon">🎁</div>
+          <div>
+            <div class="calc-result-title" id="calcResultTitle">$100 in free product</div>
+            <div class="calc-result-sub" id="calcResultSub">Our starting perk tier, unlocked at the $500 minimum.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="perks-photo reveal">
+        <div class="perks-photo-frame">
+          <img src="images/homme_gallant_brave.jpg" alt="Spongellé Men's Gallant and Brave Body Buffer gift set in a modern bathroom">
+        </div>
+        <p>Our Men's Gallant &amp; Brave Body Buffer Set brings together two elevated shower experiences designed to refresh, cleanse, and recharge for 20+ washes each.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="faq-head reveal">
+      <span class="eyebrow">Common Questions</span>
+      <h2>What investors usually ask us.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>What is Regulation Crowdfunding (Reg CF)?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Reg CF is an SEC framework that lets private companies raise capital from the general public, not just accredited investors. It's the same rule that lets everyday people invest small amounts in early-stage and growth companies through a registered funding portal.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Who can invest, and is there a minimum?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Any US resident 18 or older can typically invest in a Reg CF offering, regardless of income or net worth, though your total investment across all Reg CF deals in a 12 month period may be capped based on your income and net worth. Our minimum is $500. Investors at that level also receive $100 in free product, with better perks at higher tiers, up to $250 in limited-edition product at the $1,000 level and beyond. Full details will be confirmed in our Form C once the offering opens.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>What will I actually receive for my investment?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>The exact security type (such as equity, a revenue share, or a convertible note) will be specified in our Form C filing once the offering is live. Joining this list does not commit you to anything. It simply means we'll notify you the moment full offering terms are public.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Is my money being collected today?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>No. This page is for testing the waters only. We are gauging investor interest ahead of our official Reg CF offering. No funds are being accepted, and no commitment is created by signing up here.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>What are the risks of investing in an early-stage company?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>As with any private company investment, you could lose some or all of your money, and shares are typically illiquid with no guaranteed resale market. We encourage every investor to review our full risk disclosures in the Form C before making a decision.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>When does the offering open, and how will I find out?</span>
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>We're finalizing our Form C filing now. Everyone on this list will get a direct email the moment the offering opens, along with early access to our pitch deck and an invite to our investor webinar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing-cta">
+  <div class="wrap">
+    <h2>Your spot is waiting at the top of this page.</h2>
+    <p>Enter your details once, get priority access before this opens to the public.</p>
+    <a href="#hero-form" class="btn btn-gold">Get Early Access →</a>
+    <p class="form-contact">Questions? <a href="mailto:investors@spongelle.com">investors@spongelle.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-logo">SPONGELLÉ®</div>
+    </div>
+    <div class="legal">
+      <p><strong>Testing the Waters Disclaimer:</strong> No money or other consideration is being solicited at this time, and if sent in response, will not be accepted. No offer to buy securities can be accepted, and no part of the purchase price can be received, until a Form C offering statement is filed with the SEC and only through the funding portal that will host the offering. An indication of interest made here involves no obligation or commitment of any kind. This page is for informational purposes only and does not constitute investment advice.</p>
+      <p><strong>A Note on Timing Claims:</strong> This page reflects a general pattern seen in private-market investing, not a promise about Spongellé specifically. There's no guarantee this company will grow, get acquired, or increase in value. Private investments carry real risk, including loss of principal.</p>
+    </div>
+    <div class="footer-bottom">© 2026 Spongellé. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('leadFormTop').addEventListener('submit', function(e){
+    e.preventDefault();
+    // TODO: Replace this block with a real submission (e.g. fetch() to your CRM,
+    // Mailchimp, HubSpot, or a serverless endpoint) before running live traffic.
+    document.getElementById('form-view-top').style.display = 'none';
+    document.getElementById('success-view-top').style.display = 'block';
+  });
+
+  // Scroll-triggered reveal animation (lightweight, respects reduced motion)
+  (function(){
+    var items = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){
+      items.forEach(function(el){ el.classList.add('in-view'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function(el){ io.observe(el); });
+    // Safety net: if anything is still hidden after load (e.g. slow observers), reveal it.
+    setTimeout(function(){
+      items.forEach(function(el){ el.classList.add('in-view'); });
+    }, 1800);
+  })();
+
+  // Progressive disclosure: "More detail" toggles on momentum cards
+  document.querySelectorAll('.m-more-btn').forEach(function(btn){
+    var more = btn.nextElementSibling;
+    btn.addEventListener('click', function(){
+      var isOpen = btn.classList.contains('open');
+      if(isOpen){
+        btn.classList.remove('open');
+        more.style.maxHeight = null;
+        btn.firstChild.textContent = 'More detail ';
+      } else {
+        btn.classList.add('open');
+        more.style.maxHeight = more.scrollHeight + 'px';
+        btn.firstChild.textContent = 'Less detail ';
+      }
+    });
+  });
+
+  // Interactive market chart: toggle between metrics + hover tooltips
+  (function(){
+    var chart = document.getElementById('marketChart');
+    if(!chart) return;
+    var bars = chart.querySelectorAll('.bar-col');
+    var labelCols = document.querySelectorAll('.label-col');
+    var toggleBtns = document.querySelectorAll('.toggle-btn');
+    var currentView = 'size';
+
+    function render(){
+      bars.forEach(function(bar, i){
+        var h = parseFloat(bar.getAttribute(currentView === 'size' ? 'data-size-h' : 'data-growth-h'));
+        h = Math.max(h, 8);
+        var val = bar.getAttribute(currentView === 'size' ? 'data-size-val' : 'data-growth-val');
+        bar.querySelector('.bar-fill').style.height = h + '%';
+        bar.querySelector('.bar-tooltip').textContent = val;
+        var valueEl = labelCols[i].querySelector('.bar-value');
+        valueEl.style.display = (currentView === 'size') ? '' : 'none';
+      });
+    }
+
+    toggleBtns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        toggleBtns.forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentView = btn.getAttribute('data-view');
+        render();
+      });
+    });
+
+    render();
+  })();
+
+  // Interactive investment calculator: live currency formatting + tier feedback
+  (function(){
+    var slider = document.getElementById('calcSlider');
+    if(!slider) return;
+    var amountEl = document.getElementById('calcAmount');
+    var resultEl = document.getElementById('calcResult');
+    var titleEl = document.getElementById('calcResultTitle');
+    var subEl = document.getElementById('calcResultSub');
+
+    function formatCurrency(n){
+      return '$' + Number(n).toLocaleString('en-US');
+    }
+
+    function update(){
+      var val = parseInt(slider.value, 10);
+      amountEl.textContent = formatCurrency(val) + (val >= 2500 ? '+' : '');
+
+      if(val < 1000){
+        titleEl.textContent = '$100 in free product';
+        subEl.textContent = 'Our starting perk tier, unlocked at the $500 minimum.';
+        resultEl.className = 'calc-result';
+      } else if(val < 2500){
+        titleEl.textContent = '$250 in limited-edition product';
+        subEl.textContent = 'Unlocked at the $1,000 tier.';
+        resultEl.className = 'calc-result';
+      } else {
+        titleEl.textContent = 'Our top-tier perks';
+        subEl.textContent = 'At $2,500 and above, perks scale up further, exact details in your welcome packet.';
+        resultEl.className = 'calc-result tier-top';
+      }
+    }
+
+    slider.addEventListener('input', update);
+    update();
+  })();
+
+  // Carousel arrow controls
+  (function(){
+    var track = document.getElementById('proof-carousel');
+    if(!track) return;
+    var prev = document.querySelector('.carousel-prev');
+    var next = document.querySelector('.carousel-next');
+    function scrollAmount(){
+      var card = track.querySelector('.ccard');
+      return card ? card.getBoundingClientRect().width + 20 : 280;
+    }
+    if(prev) prev.addEventListener('click', function(){ track.scrollBy({left:-scrollAmount(), behavior:'smooth'}); });
+    if(next) next.addEventListener('click', function(){ track.scrollBy({left:scrollAmount(), behavior:'smooth'}); });
+  })();
+
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+        if(openItem !== item){
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      if(isOpen){
+        item.classList.remove('open');
+        a.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Lazy-load Instagram embed script only when the video section scrolls into view,
+  // so the page stays fast on first load.
+  (function(){
+    var grid = document.getElementById('ig-video-grid');
+    if(!grid) return;
+    var loaded = false;
+    function loadEmbed(){
+      if(loaded) return;
+      loaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://www.instagram.com/embed.js';
+      s.async = true;
+      document.body.appendChild(s);
+    }
+    if('IntersectionObserver' in window){
+      var vio = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            loadEmbed();
+            vio.disconnect();
+          }
+        });
+      }, { rootMargin: '200px 0px' });
+      vio.observe(grid);
+    } else {
+      loadEmbed();
+    }
+  })();
+</script>
+
+</body>
+</html>
